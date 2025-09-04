@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation Project</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="orange"
+             animation="property: rotation; to: 0 405 0; loop: true; dur: 3000">
+      </a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="purple"
+                animation="property: position; to: 0 3 -5; dir: alternate; dur: 2000; loop: true">
+      </a-sphere>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
